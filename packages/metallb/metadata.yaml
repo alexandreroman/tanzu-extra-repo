@@ -1,0 +1,14 @@
+apiVersion: data.packaging.carvel.dev/v1alpha1
+kind: PackageMetadata
+metadata:
+  name: metallb.extra.tanzu.vmware.com
+spec:
+  displayName: MetalLB
+  longDescription: A LoadBalancer implementation for Kubernetes
+  shortDescription: A LoadBalancer implementation for Kubernetes
+  providerName: Tanzu Extra Package Repository
+  maintainers:
+  - name: Alexandre Roman
+  categories:
+  - networking
+  supportDescription: "Go to github.com/alexandreroman/metallb-tanzu-extra for documentation"

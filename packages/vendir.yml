@@ -1,0 +1,13 @@
+apiVersion: vendir.k14s.io/v1alpha1
+kind: Config
+minimumRequiredVersion: 0.12.0
+directories:
+- path: metallb
+  contents:
+  - path: .
+    git:
+      url: https://github.com/alexandreroman/metallb-tanzu-package.git
+      ref: 4cad0975ae70b2b57b6b36869356511fda670a8d
+    includePaths:
+    - metadata.yaml
+    - 0.10.3/package.yaml

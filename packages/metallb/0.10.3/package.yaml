@@ -1,0 +1,26 @@
+apiVersion: data.packaging.carvel.dev/v1alpha1
+kind: Package
+metadata:
+  name: metallb.extra.tanzu.vmware.com.0.10.3
+  namespace: metallb
+spec:
+  refName: metallb.extra.tanzu.vmware.com
+  version: 0.10.3
+  releaseNotes: "metallb 0.10.3 https://github.com/metallb/metallb/releases/tag/metallb-chart-0.10.3"
+  licenses:
+  - "Apache 2.0"
+  template:
+    spec:
+      fetch:
+      - imgpkgBundle:
+          image: ghcr.io/alexandreroman/metallb-tanzu-extra@sha256:4512d67a489417580049551a7b4bf4d3f8e99c22b6cc3255988272133a74fa9b
+      template:
+      - ytt:
+          paths:
+          - config/
+      - kbld:
+          paths:
+          - "-"
+          - .imgpkg/images.yml
+      deploy:
+      - kapp: {}

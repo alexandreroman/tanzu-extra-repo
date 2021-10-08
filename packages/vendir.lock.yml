@@ -1,0 +1,9 @@
+apiVersion: vendir.k14s.io/v1alpha1
+directories:
+- contents:
+  - git:
+      commitTitle: Init project
+      sha: 4cad0975ae70b2b57b6b36869356511fda670a8d
+    path: .
+  path: metallb
+kind: LockConfig
