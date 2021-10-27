@@ -1,0 +1,14 @@
+apiVersion: data.packaging.carvel.dev/v1alpha1
+kind: PackageMetadata
+metadata:
+  name: kube-vip.extra.tanzu.vmware.com
+spec:
+  displayName: Kube-Vip
+  longDescription: A LoadBalancer implementation for Kubernetes
+  shortDescription: A LoadBalancer implementation for Kubernetes
+  providerName: Tanzu Extra Package Repository
+  maintainers:
+  - name: Alexandre Roman
+  categories:
+  - networking
+  supportDescription: "Go to github.com/alexandreroman/kube-vip-tanzu-extra for documentation"

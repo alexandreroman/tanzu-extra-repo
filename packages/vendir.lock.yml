@@ -6,4 +6,10 @@ directories:
       sha: 4cad0975ae70b2b57b6b36869356511fda670a8d
     path: .
   path: metallb
+- contents:
+  - git:
+      commitTitle: Init project
+      sha: adfff3321d479b6eaa47c5b0ef20c5c2adc61cd1
+    path: .
+  path: kube-vip
 kind: LockConfig

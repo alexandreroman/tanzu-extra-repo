@@ -1,0 +1,26 @@
+apiVersion: data.packaging.carvel.dev/v1alpha1
+kind: Package
+metadata:
+  name: kube-vip.extra.tanzu.vmware.com.0.3.9
+  namespace: kube-vip
+spec:
+  refName: kube-vip.extra.tanzu.vmware.com
+  version: 0.3.9
+  releaseNotes: "kube-vip 0.3.9 https://github.com/kube-vip/kube-vip/releases/tag/v0.3.9"
+  licenses:
+  - "Apache 2.0"
+  template:
+    spec:
+      fetch:
+      - imgpkgBundle:
+          image: ghcr.io/alexandreroman/kube-vip-tanzu-extra@sha256:40adf0074f1b69e250bccf92454ab759511013ba35d011824a199cac864cdf97
+      template:
+      - ytt:
+          paths:
+          - config/
+      - kbld:
+          paths:
+          - "-"
+          - .imgpkg/images.yml
+      deploy:
+      - kapp: {}
