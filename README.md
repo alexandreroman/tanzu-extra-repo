@@ -13,7 +13,7 @@ use these packages at your own risk.
 Run this command to connect your Tanzu Kubernetes distribution to this package repository:
 
 ```shell
-tanzu package repository add tanzu-extra --namespace tanzu-package-repo-global --url ghcr.io/alexandreroman/tanzu-extra-repo
+tanzu package repository add tanzu-extra --namespace tanzu-package-repo-global --url ghcr.io/alexandreroman/tanzu-extra-repo:stable
 ```
 
 After a few minutes, you should be able to list available packages:
