@@ -2,8 +2,8 @@ apiVersion: vendir.k14s.io/v1alpha1
 directories:
 - contents:
   - git:
-      commitTitle: Init project
-      sha: 4cad0975ae70b2b57b6b36869356511fda670a8d
+      commitTitle: Add version 0.11.0
+      sha: f11f98450b04393a9b91955f74ffb6d74a6ee0ca
     path: .
   path: metallb
 - contents:
