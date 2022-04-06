@@ -12,4 +12,10 @@ directories:
       sha: adfff3321d479b6eaa47c5b0ef20c5c2adc61cd1
     path: .
   path: kube-vip
+- contents:
+  - git:
+      commitTitle: Init project
+      sha: ee76a8098c7435352249faeacea6ef45b3a10f0d
+    path: .
+  path: tekton
 kind: LockConfig

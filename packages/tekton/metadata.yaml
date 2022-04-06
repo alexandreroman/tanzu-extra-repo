@@ -1,0 +1,14 @@
+apiVersion: data.packaging.carvel.dev/v1alpha1
+kind: PackageMetadata
+metadata:
+  name: tekton.extra.tanzu.vmware.com
+spec:
+  displayName: Tekton
+  longDescription: A CI/CD framework for Kubernetes
+  shortDescription: A CI/CD framework for Kubernetes
+  providerName: Tanzu Extra Package Repository
+  maintainers:
+  - name: Alexandre Roman
+  categories:
+  - networking
+  supportDescription: "Go to github.com/alexandreroman/tekton-tanzu-extra for documentation"

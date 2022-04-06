@@ -22,3 +22,12 @@ directories:
     includePaths:
     - metadata.yaml
     - 0.3.9/package.yaml
+- path: tekton
+  contents:
+  - path: .
+    git:
+      url: https://github.com/alexandreroman/tekton-tanzu-extra.git
+      ref: ee76a8098c7435352249faeacea6ef45b3a10f0d
+    includePaths:
+    - metadata.yaml
+    - 0.34.1/package.yaml
