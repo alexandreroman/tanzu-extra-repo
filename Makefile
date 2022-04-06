@@ -1,4 +1,4 @@
-# Copyright 2021 VMware. All Rights Reserved.
+# Copyright 2022 VMware. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 
 REQUIRED_BINARIES := imgpkg kbld ytt vendir
