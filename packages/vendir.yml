@@ -7,11 +7,12 @@ directories:
   - path: .
     git:
       url: https://github.com/alexandreroman/metallb-tanzu-extra.git
-      ref: f11f98450b04393a9b91955f74ffb6d74a6ee0ca
+      ref: c96cbd0038b7322b7c928450139222910fa9c8e2
     includePaths:
     - metadata.yaml
     - 0.10.3/package.yaml
     - 0.11.0/package.yaml
+    - 0.12.1/package.yaml
 - path: kube-vip
   contents:
   - path: .
