@@ -1,0 +1,14 @@
+apiVersion: data.packaging.carvel.dev/v1alpha1
+kind: PackageMetadata
+metadata:
+  name: tekton-dashboard.extra.tanzu.vmware.com
+spec:
+  displayName: Tekton Dashboard
+  longDescription: A web UI for Tekton
+  shortDescription: A web UI for Tekton
+  providerName: Tanzu Extra Package Repository
+  maintainers:
+  - name: Alexandre Roman
+  categories:
+  - networking
+  supportDescription: "Go to github.com/alexandreroman/tekton-dashboard-tanzu-extra for documentation"

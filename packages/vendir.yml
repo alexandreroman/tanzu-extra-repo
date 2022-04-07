@@ -31,3 +31,12 @@ directories:
     includePaths:
     - metadata.yaml
     - 0.34.1/package.yaml
+- path: tekton-dashboard
+  contents:
+  - path: .
+    git:
+      url: https://github.com/alexandreroman/tekton-dashboard-tanzu-extra.git
+      ref: fe78b67c90925900ca92d189d68ac7f1cdf36833
+    includePaths:
+    - metadata.yaml
+    - 0.24.1/package.yaml

@@ -1,0 +1,25 @@
+apiVersion: data.packaging.carvel.dev/v1alpha1
+kind: Package
+metadata:
+  name: tekton-dashboard.extra.tanzu.vmware.com.0.24.1
+spec:
+  refName: tekton-dashboard.extra.tanzu.vmware.com
+  version: 0.24.1
+  releaseNotes: "tekton-dashboard 0.24.1 https://github.com/tektoncd/dashboard/releases/tag/v0.24.1"
+  licenses:
+  - "Apache 2.0"
+  template:
+    spec:
+      fetch:
+      - imgpkgBundle:
+          image: ghcr.io/alexandreroman/tekton-dashboard-tanzu-extra@sha256:d68e9fa4c5e92f30603b054882e5b78b8e644b65375f843b630af49a8950f44f
+      template:
+      - ytt:
+          paths:
+          - config/
+      - kbld:
+          paths:
+          - "-"
+          - .imgpkg/images.yml
+      deploy:
+      - kapp: {}

@@ -18,4 +18,10 @@ directories:
       sha: 44c7e16f74c3e4060fcbea2e06395616c0ddde33
     path: .
   path: tekton-pipelines
+- contents:
+  - git:
+      commitTitle: Init project
+      sha: fe78b67c90925900ca92d189d68ac7f1cdf36833
+    path: .
+  path: tekton-dashboard
 kind: LockConfig
