@@ -14,8 +14,8 @@ directories:
   path: kube-vip
 - contents:
   - git:
-      commitTitle: Init project
-      sha: ee76a8098c7435352249faeacea6ef45b3a10f0d
+      commitTitle: Rename package to tekton-pipelines
+      sha: 44c7e16f74c3e4060fcbea2e06395616c0ddde33
     path: .
-  path: tekton
+  path: tekton-pipelines
 kind: LockConfig

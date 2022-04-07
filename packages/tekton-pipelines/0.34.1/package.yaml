@@ -1,19 +1,18 @@
 apiVersion: data.packaging.carvel.dev/v1alpha1
 kind: Package
 metadata:
-  name: tekton.extra.tanzu.vmware.com.0.34.1
-  namespace: tekton
+  name: tekton-pipelines.extra.tanzu.vmware.com.0.34.1
 spec:
-  refName: tekton.extra.tanzu.vmware.com
+  refName: tekton-pipelines.extra.tanzu.vmware.com
   version: 0.34.1
-  releaseNotes: "tekton 0.34.1 https://github.com/tektoncd/pipeline/releases/tag/v0.34.1"
+  releaseNotes: "tekton-pipelines 0.34.1 https://github.com/tektoncd/pipeline/releases/tag/v0.34.1"
   licenses:
   - "Apache 2.0"
   template:
     spec:
       fetch:
       - imgpkgBundle:
-          image: ghcr.io/alexandreroman/tekton-tanzu-extra@sha256:202bc76e7389fe0823dbba22a94bdd71ff54bdb1cb662f8001e8350e9ffe5ac7
+          image: ghcr.io/alexandreroman/tekton-pipelines-tanzu-extra@sha256:5929af8a6c731e1cba5220ebb86c61d8b4caa3d855fbb8acb80fa6edf4311d52
       template:
       - ytt:
           paths:

@@ -1,9 +1,9 @@
 apiVersion: data.packaging.carvel.dev/v1alpha1
 kind: PackageMetadata
 metadata:
-  name: tekton.extra.tanzu.vmware.com
+  name: tekton-pipelines.extra.tanzu.vmware.com
 spec:
-  displayName: Tekton
+  displayName: Tekton Pipelines
   longDescription: A CI/CD framework for Kubernetes
   shortDescription: A CI/CD framework for Kubernetes
   providerName: Tanzu Extra Package Repository
@@ -11,4 +11,4 @@ spec:
   - name: Alexandre Roman
   categories:
   - networking
-  supportDescription: "Go to github.com/alexandreroman/tekton-tanzu-extra for documentation"
+  supportDescription: "Go to github.com/alexandreroman/tekton-pipelines-tanzu-extra for documentation"
